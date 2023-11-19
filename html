@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <body style="font-family: 'Arial', sans-serif; display: flex; align-items: center; justify-content: center; height: 100vh; margin: 0; overflow: hidden; text-align: center; position: relative;">
 
     <label for="answer">Do you love me?</label>
@@ -53,7 +54,7 @@
                 element.innerHTML = symbol;
                 element.className = className;
                 document.body.appendChild(element);
-                
+
                 anime({
                     targets: element,
                     translateX: anime.random(-500, 500),
@@ -62,7 +63,7 @@
                     opacity: [0.5, 1],
                     easing: 'linear',
                     duration: anime.random(1000, 2000),
-                    complete: function(anim) {
+                    complete: function (anim) {
                         document.body.removeChild(element);
                     }
                 });
@@ -71,4 +72,7 @@
     </script>
 
 </body>
+
+</html>
+
 </html>
